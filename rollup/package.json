@@ -1,0 +1,15 @@
+{
+  "name": "rollup-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup ../source/entry.js | uglifyjs --compress --mangle --enclose > ../rollup-bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rollup": "^0.36.0",
+    "uglify-js": "^2.7.3"
+  }
+}
